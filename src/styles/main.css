@@ -59,3 +59,29 @@
     border: 3px solid #000;
     border-radius: 5px;
 }
+
+
+
+
+.card_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem;
+
+    width: 100%;
+    height: 6rem;
+
+    background-color: #fff;
+}
+
+#card-name {
+    font-size: 0.8rem;
+}
+
+#card-type {
+    font-size: 1rem;
+}
+
