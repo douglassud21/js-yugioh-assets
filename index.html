@@ -27,39 +27,81 @@
 </head>
 <body>
 
+    <!--Video de Background-->
     <div class="bg-video">
         <video class="video" autoplay loop muted>
             <source src="/src/assets/video/yugi.mp4" type="video/mp4">
         </video>
     </div>    
 
+    <!--Container Principal-->
     <main class="container">
 
+        <!--Container do lado esquerdo-->
         <section class="container__left framed-golden-2">
 
+            <!--Pontuação do jogador-->
             <div class="score_box frame">
                 <span id="score_points">
                     Win: 0 | Lose: 0
                 </span>
             </div>
 
+            <!--Imagens dos Cards-->
             <div class="menu_avatar">
                 <img id="card-image">
             </div>
 
+            <!--Detalhes dos Cards-->
             <div class="card_details frame">
                 <p id="card-name">a</p>
                 <p id="card-type">a</p>
             </div>
 
-        </section>
+        </section> <!--Fim do Container Esquedo-->
 
+        <!--Container Direito-->
         <section class="container__right">
 
+            <!--Container dos Cards-->
             <div class="card-box__container">
 
-            </div>
+                <!--Cards-->
+                <div class="card-box framed" id="computer-cards"></div>
 
+                <!--Campo de batalha-->
+                <div class="card-versus__container">
+
+                    <!--Campo de batalha-->
+                    <div class="versus-top">
+
+                        <!--Campo do top-->
+                        <div class="card-infield">
+                            <img id="player-field-card" height="180px" width="125px">
+                        </div>
+
+                            <!--Imagem de separação-->
+                            <img height="100px" src="/src/assets/icons/millenium2.png">
+
+                        <!--Campo do Bottom-->
+                        <div class="card-infield">
+                            <img id="computer-field-card" height="180px" width="125px">
+                        </div>
+
+                    </div>
+
+                    <!--Botôes-->
+                    <div class="versus-bottom">
+
+                        <button id="next-duel" class="rpgui-button" onclick="resetDuel()">GANHOU</button>
+
+                    </div>
+
+                </div>
+
+                <div class="card-box framed" id="player-cards"></div>
+
+            </div>
         </section>
 
     </main>
