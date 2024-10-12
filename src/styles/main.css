@@ -41,6 +41,7 @@
 }
 
 .container__left {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -59,9 +60,6 @@
     border: 3px solid #000;
     border-radius: 5px;
 }
-
-
-
 
 .card_details {
     display: flex;
@@ -140,7 +138,13 @@
     width: 8rem;
 }
 
+.card {
+    transition: transform 0.2s;
+}
 
+.card:hover {
+    transform: scale(1.2);
+}
 
 
 
